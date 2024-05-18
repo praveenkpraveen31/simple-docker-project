@@ -5,7 +5,7 @@ MAINTAINER praveen@gmail.com
 # Install packages
 RUN dnf install -y httpd git && dnf clean all
 
-RUN git clone https://github.com/cloudacademy/static-website-example.git
+RUN git clone https://github.com/praveenkpraveen31/docker-project.git
 # Copy the zip file  container
 RUN cp -rvf static-website-example/* /var/www/html/
 
