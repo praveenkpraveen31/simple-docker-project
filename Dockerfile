@@ -1,6 +1,6 @@
 FROM rockylinux:8
 
-MAINTAINER praveen@gmail.com
+MAINTAINER praveeen@gmail.com
 
 # Install packages
 RUN dnf install -y httpd git && dnf clean all
@@ -10,6 +10,7 @@ RUN git clone https://github.com/praveenkpraveen31/docker-project.git
 RUN cp -rvf docker-project/* /var/www/html/
 
 WORKDIR /var/www/html
+RUN mkdir /data
 
 # Copy contents of markups-kindle directory to current directory
 #RUN cp -rvf static-website-example/ &&
