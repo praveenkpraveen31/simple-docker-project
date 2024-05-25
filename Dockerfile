@@ -13,7 +13,7 @@ WORKDIR /var/www/html
 
 # Copy contents of markups-kindle directory to current directory
 #RUN cp -rvf static-website-example/ &&
-RUN rm -rf static-website-example  __MACOSX
+RUN rm -rf docker-project  __MACOSX
 
 EXPOSE 80
 
