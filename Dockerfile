@@ -7,7 +7,7 @@ RUN dnf install -y httpd git && dnf clean all
 
 RUN git clone https://github.com/praveenkpraveen31/docker-project.git
 # Copy the zip file  container
-RUN cp -rvf static-website-example/* /var/www/html/
+RUN cp -rvf docker-project/* /var/www/html/
 
 WORKDIR /var/www/html
 
